@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio Alexis BOURDEAU - BTS SIO SLAM</title>
+    <title>Portfolio Alexis BOURDEAU - BTS SIO</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
@@ -19,29 +19,26 @@
             <li><a href="#procedures">Procédures</a></li>
             <li><a href="#veille">Veille</a></li>
             <li><a href="#contact">Contact</a></li>
-            <li><button id="theme-btn" class="theme-btn">🌓 Mode</button></li>
+            <li><button id="theme-toggle" style="background: var(--accent-color); color: white; border: none; padding: 5px 10px; cursor: pointer; border-radius: 5px;">🌓 Mode</button></li>
         </ul>
     </nav>
 
     <section id="accueil">
         <div class="container">
             <h1>Alexis BOURDEAU</h1>
-            <h2>Étudiant en BTS SIO - Option SLAM</h2>
-            <p>Deuxième année (2025-2026) à l'Institution Saint-Aspais</p>
+            <h2>Étudiant en BTS SIO</h2>
+            <p>En formation à l'Institution Saint-Aspais</p>
         </div>
     </section>
 
     <section id="cv">
         <div class="container">
-            <h2>Mon CV & Documents</h2>
-            <div class="card">
-                <p>Découvrez mon parcours professionnel et mes rapports de stage.</p>
+            <h2>Mon CV</h2>
+            <div class="cv-content">
+                <p>Découvrez mon parcours professionnel et mes formations.</p>
                 <div class="buttons-container">
-                    <a href="CV_Alexis_Bourdeau.pdf" download class="btn">
+                    <a href="./BOURDEAU_Alexis_CV.pdf" download="CV_BOURDEAU_Alexis_BTS_SIO" class="btn">
                         <i class="fas fa-download"></i> Télécharger mon CV
-                    </a>
-                    <a href="BOURDEAU-Alexis-rapport-de-stage-SIO2.pdf" download class="btn btn-alt">
-                        <i class="fas fa-file-pdf"></i> Rapport de Stage SIO2
                     </a>
                 </div>
             </div>
@@ -52,11 +49,11 @@
         <div class="container">
             <h2>Parcours Professionnel</h2>
             <div class="timeline">
-                <div class="card timeline-item">
-                    <h3>2025 - 2026</h3>
-                    <p>BTS SIO Option SLAM (2ème année) - Institution Saint-Aspais</p>
+                <div class="timeline-item">
+                    <h3>2025 - Aujourd'hui</h3>
+                    <p>Formation BTS SIO - Institution Saint-Aspais</p>
                 </div>
-                <div class="card timeline-item">
+                <div class="timeline-item">
                     <h3>2024</h3>
                     <p>Baccalauréat</p>
                 </div>
@@ -67,36 +64,41 @@
     <section id="formation">
         <div class="container">
             <h2>Formation BTS SIO</h2>
-            <div class="card">
-                <h3>Présentation du BTS SIO</h3>
-                <p>Le BTS Services Informatiques aux Organisations propose deux spécialités :</p>
-                <ul>
-                    <li>SISR : Solutions d'Infrastructure, Systèmes et Réseaux</li>
-                    <li><b>SLAM : Solutions Logicielles et Applications Métiers (Mon Option)</b></li>
-                </ul>
-                <a href="./referentiel bts sio.pdf" download class="btn" style="margin-top:15px;">
-                    <i class="fas fa-download"></i> Télécharger le Référentiel
-                </a>
+            <div class="formation-content">
+                <div class="formation-description">
+                    <h3>Présentation du BTS SIO</h3>
+                    <p>Le BTS Services Informatiques aux Organisations est un diplôme reconnu par l'État de niveau Bac+2. Il propose deux spécialités :</p>
+                    <ul>
+                        <li>SISR : Solutions d'Infrastructure, Systèmes et Réseaux</li>
+                        <li>SLAM : Solutions Logicielles et Applications Métiers</li>
+                    </ul>
+                </div>
+                <div class="formation-links">
+                    <a href="./referentiel bts sio.pdf" download="Referentiel_BTS_SIO" class="btn">
+                        <i class="fas fa-download"></i> Télécharger le Référentiel BTS SIO
+                    </a>
+                </div>
             </div>
         </div>
     </section>
 
     <section id="competences">
         <div class="container">
-            <h2>Compétences Techniques (SLAM)</h2>
-            <div class="grid">
-                <div class="card">
+            <h2>Compétences Techniques</h2>
+            <div class="competences-grid">
+                <div class="competence">
                     <h3><i class="fas fa-code"></i> Langages</h3>
                     <ul>
-                        <li>HTML / CSS / JavaScript</li>
-                        <li>PHP / Python / SQL</li>
+                        <li>HTML/CSS</li>
+                        <li>Python (bases)</li>
                     </ul>
                 </div>
-                <div class="card">
+                <div class="competence">
                     <h3><i class="fas fa-tools"></i> Outils</h3>
                     <ul>
-                        <li>Visual Studio Code / Github</li>
-                        <li>HeidiSQL / WampServer</li>
+                        <li>Visual Studio Code</li>
+                        <li>Github</li>
+                        <li>Windows</li>
                     </ul>
                 </div>
             </div>
@@ -106,21 +108,21 @@
     <section id="procedures">
         <div class="container">
             <h2>Procédures Techniques</h2>
-            <div class="grid">
-                <div class="card">
-                    <h3>Installation de VS Code</h3>
+            <div class="procedures-grid">
+                <div class="procedure">
+                    <h3>Installation de Visual Studio Code</h3>
                     <ol>
-                        <li>Téléchargement officiel</li>
+                        <li>Téléchargement depuis le site officiel</li>
                         <li>Installation pas à pas</li>
-                        <li>Configuration</li>
+                        <li>Configuration de base</li>
                     </ol>
                 </div>
-                <div class="card">
+                <div class="procedure">
                     <h3>Configuration Github</h3>
                     <ol>
-                        <li>Installation</li>
+                        <li>Installation de Github</li>
                         <li>Configuration initiale</li>
-                        <li>Commandes git</li>
+                        <li>Commandes de base</li>
                     </ol>
                 </div>
             </div>
@@ -130,17 +132,20 @@
     <section id="projets">
         <div class="container">
             <h2>Mes Projets</h2>
-            <div class="grid">
-                <div class="card">
+            <div class="projets-grid">
+                <div class="projet">
+                    <i class="fas fa-laptop-code"></i>
+                    <h3>Site Web Personnel</h3>
+                    <p>Création de mon premier portfolio en HTML/CSS</p>
+                </div>
+                <div class="projet">
                     <i class="fas fa-utensils"></i>
                     <h3>Koo2fourchette</h3>
-                    <p>Site de recettes de cuisine avec interface moderne.</p>
-                    <span class="tag">HTML</span> <span class="tag">CSS</span>
-                </div>
-                <div class="card">
-                    <i class="fas fa-laptop-code"></i>
-                    <h3>Site Personnel</h3>
-                    <p>Création de ce portfolio en HTML/CSS/JS.</p>
+                    <p>Site de recettes de cuisine avec une interface moderne et intuitive</p>
+                    <div class="projet-details">
+                        <span class="tag">HTML</span>
+                        <span class="tag">CSS</span>
+                    </div>
                 </div>
             </div>
         </div>
@@ -151,67 +156,66 @@
             <h2>Veille Technologique</h2>
             <div class="veille-content">
                 <h3>L'Évolution du Cloud en 2025</h3>
-                <img src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&w=1200&q=80" class="veille-image">
-                
-                <div class="card">
-                    <h4>1. L'IA au Cœur du Cloud</h4>
-                    <img src="https://images.unsplash.com/photo-1677442136019-21780ecad995?auto=format&fit=crop&w=1200&q=80" class="veille-image">
-                    <p>L'intelligence artificielle (IA) est devenue un pilier stratégique du cloud. L'IA générative permet d'automatiser de nombreux processus métier...</p>
-                    <a href="https://www.gartner.com" target="_blank">🔗 Source Gartner</a>
+                <img src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&w=1200&q=80" alt="Cloud Computing Overview" class="veille-image" style="width:100%; border-radius:8px;">
+                <p>En 2025, le cloud poursuit sa transformation en s'appuyant sur l'intelligence artificielle, la cybersécurité et des infrastructures plus flexibles...</p>
+
+                <div class="veille-section">
+                    <h4>1. L'IA au Cœur de l'Évolution du Cloud</h4>
+                    <img src="https://images.unsplash.com/photo-1677442136019-21780ecad995?auto=format&fit=crop&w=1200&q=80" alt="AI in Cloud Computing" class="veille-image" style="width:100%; border-radius:8px;">
+                    <p>L'intelligence artificielle (IA) est devenue un pilier stratégique du cloud...</p>
+                    <p class="source"><a href="https://www.gartner.com/en/articles/what-s-new-in-artificial-intelligence-from-the-2023-gartner-hype-cycle" target="_blank">🔗 Source</a></p>
                 </div>
 
-                <div class="card">
-                    <h4>2. Le Cloud Distribué</h4>
-                    <img src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&w=1200&q=80" class="veille-image">
+                <div class="veille-section">
+                    <h4>2. Le Cloud Distribué : Une Infrastructure Plus Agile et Performante</h4>
+                    <img src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&w=1200&q=80" alt="Distributed Cloud Infrastructure" class="veille-image" style="width:100%; border-radius:8px;">
                     <p>Le cloud distribué permet d'exécuter des traitements de données plus proches des utilisateurs finaux...</p>
+                    <p class="source"><a href="https://www.zdnet.fr/actualites/le-cloud-distribue-va-t-il-revolutionner-l-informatique-en-entreprise-39917089.htm" target="_blank">🔗 Source</a></p>
                 </div>
-
-                <p><i>Note : Tous tes points de veille originaux (3 à 7) sont conservés.</i></p>
-            </div>
+                </div>
         </div>
     </section>
 
     <section id="contact">
         <div class="container">
             <h2>Contact</h2>
-            <div class="card">
-                <form action="mailto:alexisbourdeau77@gmail.com" method="post" enctype="text/plain">
-                    <div class="form-group">
-                        <label>Nom :</label>
-                        <input type="text" name="nom" required>
-                    </div>
-                    <div class="form-group">
-                        <label>Email :</label>
-                        <input type="email" name="email" required>
-                    </div>
-                    <div class="form-group">
-                        <label>Message :</label>
-                        <textarea name="message" required></textarea>
-                    </div>
-                    <button type="submit" class="btn"><i class="fas fa-paper-plane"></i> Envoyer</button>
-                </form>
-            </div>
+            <form action="mailto:alexisbourdeau77@gmail.com" method="post" enctype="text/plain">
+                <div class="form-group">
+                    <label for="nom">Nom :</label>
+                    <input type="text" id="nom" name="nom" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email :</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message :</label>
+                    <textarea id="message" name="message" required></textarea>
+                </div>
+                <button type="submit" class="btn">
+                    <i class="fas fa-paper-plane"></i> Envoyer
+                </button>
+            </form>
         </div>
     </section>
 
     <footer>
         <div class="container">
-            <p>Portfolio Alexis BOURDEAU - BTS SIO SLAM 2026</p>
+            <p>Portfolio Alexis BOURDEAU - BTS SIO 2024</p>
+            <div class="footer-links">
+                <a href="https://www.institutionsaintaspais.fr/" target="_blank">
+                    <i class="fas fa-school"></i> Institution Saint-Aspais
+                </a>
+            </div>
         </div>
     </footer>
 
     <script>
-        const btn = document.getElementById('theme-btn');
-        const body = document.body;
+        const btn = document.getElementById('theme-toggle');
         btn.addEventListener('click', () => {
-            body.classList.toggle('light-mode');
-            btn.textContent = body.classList.contains('light-mode') ? "☀️ Clair" : "🌙 Sombre";
-            localStorage.setItem('theme', body.classList.contains('light-mode') ? 'light' : 'dark');
+            document.body.classList.toggle('light-theme');
+            btn.textContent = document.body.classList.contains('light-theme') ? "🌙 Sombre" : "☀️ Clair";
         });
-        if (localStorage.getItem('theme') === 'light') {
-            body.classList.add('light-mode');
-            btn.textContent = "☀️ Clair";
-        }
     </script>
 </body>
 </html>
