@@ -3,8 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio Alexis BOURDEAU - BTS SIO</title>
+    <title>Portfolio Alexis BOURDEAU - BTS SIO SLAM</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
     <nav>
@@ -12,31 +13,33 @@
             <li><a href="#accueil">Accueil</a></li>
             <li><a href="#cv">CV</a></li>
             <li><a href="#parcours">Parcours</a></li>
-            <li><a href="#formation">Formation</a></li>
             <li><a href="#competences">Compétences</a></li>
             <li><a href="#projets">Projets</a></li>
-            <li><a href="#procedures">Procédures</a></li>
             <li><a href="#veille">Veille</a></li>
             <li><a href="#contact">Contact</a></li>
+            <li><button id="theme-toggle" class="theme-btn">🌓 Mode</button></li>
         </ul>
     </nav>
 
     <section id="accueil">
         <div class="container">
             <h1>Alexis BOURDEAU</h1>
-            <h2>Étudiant en BTS SIO</h2>
-            <p>En formation à l'Institution Saint-Aspais</p>
+            <h2>Étudiant en BTS SIO - Option SLAM</h2>
+            <p>Deuxième année (2025-2026) à l'Institution Saint-Aspais</p>
         </div>
     </section>
 
     <section id="cv">
         <div class="container">
-            <h2>Mon CV</h2>
+            <h2>Mon CV & Documents</h2>
             <div class="cv-content">
-                <p>Découvrez mon parcours professionnel et mes formations.</p>
+                <p>Retrouvez mon parcours et mes documents de stage.</p>
                 <div class="buttons-container">
-                    <a href="CV_Alexis_Bourdeau.pdf" download="CV_Alexis_Bourdeau.pdf" class="btn">
-                        <i class="fas fa-download"></i> Télécharger mon CV
+                    <a href="CV_Alexis_Bourdeau.pdf" download class="btn">
+                        <i class="fas fa-download"></i> Mon CV
+                    </a>
+                    <a href="BOURDEAU-Alexis-rapport-de-stage-SIO2.pdf" download class="btn btn-alt">
+                        <i class="fas fa-file-pdf"></i> Rapport de Stage SIO2
                     </a>
                 </div>
             </div>
@@ -45,36 +48,19 @@
 
     <section id="parcours">
         <div class="container">
-            <h2>Parcours Professionnel</h2>
+            <h2>Parcours</h2>
             <div class="timeline">
                 <div class="timeline-item">
-                    <h3>2025-2026 Aujourd'hui</h3>
-                    <p>Formation BTS SIO - Institution Saint-Aspais</p>
+                    <h3>2025 - 2026</h3>
+                    <p>BTS SIO Option SLAM (2ème année) - Institution Saint-Aspais</p>
+                </div>
+                <div class="timeline-item">
+                    <h3>2024 - 2025</h3>
+                    <p>BTS SIO (1ère année) - Institution Saint-Aspais</p>
                 </div>
                 <div class="timeline-item">
                     <h3>2024</h3>
-                    <p>Baccalauréat</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="formation">
-        <div class="container">
-            <h2>Formation BTS SIO</h2>
-            <div class="formation-content">
-                <div class="formation-description">
-                    <h3>Présentation du BTS SIO</h3>
-                    <p>Le BTS Services Informatiques aux Organisations est un diplôme reconnu par l'État de niveau Bac+2. Il propose deux spécialités :</p>
-                    <ul>
-                        <li>SISR : Solutions d'Infrastructure, Systèmes et Réseaux</li>
-                        <li>SLAM : Solutions Logicielles et Applications Métiers</li>
-                    </ul>
-                </div>
-                <div class="formation-links">
-                    <a href="./referentiel bts sio.pdf" download="Referentiel_BTS_SIO" class="btn">
-                        <i class="fas fa-download"></i> Télécharger le Référentiel BTS SIO
-                    </a>
+                    <p>Obtention du Baccalauréat</p>
                 </div>
             </div>
         </div>
@@ -82,46 +68,23 @@
 
     <section id="competences">
         <div class="container">
-            <h2>Compétences Techniques</h2>
+            <h2>Compétences Techniques (SLAM)</h2>
             <div class="competences-grid">
                 <div class="competence">
-                    <h3><i class="fas fa-code"></i> Langages</h3>
+                    <h3><i class="fas fa-code"></i> Développement</h3>
                     <ul>
-                        <li>HTML/CSS</li>
-                        <li>Python (bases)</li>
+                        <li>HTML5 / CSS3 / JavaScript</li>
+                        <li>PHP / Python</li>
+                        <li>SQL (Bases de données)</li>
                     </ul>
                 </div>
                 <div class="competence">
-                    <h3><i class="fas fa-tools"></i> Outils</h3>
+                    <h3><i class="fas fa-tools"></i> Outils & Environnement</h3>
                     <ul>
-                        <li>Visual Studio Code</li>
-                        <li>Github</li>
-                        <li>Windows</li>
+                        <li>VS Code / Github</li>
+                        <li>HeidiSQL / WampServer</li>
+                        <li>Windows / Linux</li>
                     </ul>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="procedures">
-        <div class="container">
-            <h2>Procédures Techniques</h2>
-            <div class="procedures-grid">
-                <div class="procedure">
-                    <h3>Installation de Visual Studio Code</h3>
-                    <ol>
-                        <li>Téléchargement depuis le site officiel</li>
-                        <li>Installation pas à pas</li>
-                        <li>Configuration de base</li>
-                    </ol>
-                </div>
-                <div class="procedure">
-                    <h3>Configuration Github</h3>
-                    <ol>
-                        <li>Installation de Github</li>
-                        <li>Configuration initiale</li>
-                        <li>Commandes de base</li>
-                    </ol>
                 </div>
             </div>
         </div>
@@ -132,18 +95,27 @@
             <h2>Mes Projets</h2>
             <div class="projets-grid">
                 <div class="projet">
-                    <i class="fas fa-laptop-code"></i>
-                    <h3>Site Web Personnel</h3>
-                    <p>Création de mon premier portfolio en HTML/CSS</p>
+                    <i class="fas fa-briefcase"></i>
+                    <h3>Stage de 2ème Année</h3>
+                    <p>Développement et maintenance applicative au sein d'une entreprise.</p>
+                    <div class="projet-details">
+                        <span class="tag">SLAM</span>
+                        <span class="tag">Professionnel</span>
+                    </div>
                 </div>
                 <div class="projet">
                     <i class="fas fa-utensils"></i>
                     <h3>Koo2fourchette</h3>
-                    <p>Site de recettes de cuisine avec une interface moderne et intuitive</p>
+                    <p>Site de recettes avec interface moderne en HTML/CSS.</p>
                     <div class="projet-details">
-                        <span class="tag">HTML</span>
-                        <span class="tag">CSS</span>
+                        <span class="tag">Web</span>
+                        <span class="tag">Design</span>
                     </div>
+                </div>
+                <div class="projet">
+                    <i class="fas fa-laptop-code"></i>
+                    <h3>Portfolio</h3>
+                    <p>Conception de ce site web avec gestion du thème sombre/clair.</p>
                 </div>
             </div>
         </div>
@@ -154,72 +126,8 @@
             <h2>Veille Technologique</h2>
             <div class="veille-content">
                 <h3>L'Évolution du Cloud en 2026</h3>
-                <img src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&w=1200&q=80" alt="Cloud Computing Overview" class="veille-image">
-                <p>En 2025, le cloud poursuit sa transformation en s'appuyant sur l'intelligence artificielle, la cybersécurité et des infrastructures plus flexibles. Cette évolution répond aux besoins croissants des entreprises en matière d'agilité, de performances et de conformité. Voici les principales tendances qui façonnent son avenir.</p>
-
-                <div class="veille-section">
-                    <h4>1. L'IA au Cœur de l'Évolution du Cloud</h4>
-                    <img src="https://images.unsplash.com/photo-1677442136019-21780ecad995?auto=format&fit=crop&w=1200&q=80" alt="AI in Cloud Computing" class="veille-image">
-                    <p>L'intelligence artificielle (IA) est devenue un pilier stratégique du cloud. L'IA générative permet d'automatiser de nombreux processus métier, d'optimiser la gestion des ressources cloud et d'accélérer le traitement des données. Les entreprises s'appuient de plus en plus sur des modèles spécialisés, capables de traiter des volumes massifs de données en temps réel. Cette tendance améliore la productivité et favorise l'innovation, en réduisant les coûts liés à l'exploitation des infrastructures cloud.</p>
-                    <p class="source"><a href="https://www.gartner.com/en/articles/what-s-new-in-artificial-intelligence-from-the-2023-gartner-hype-cycle" target="_blank">🔗 Source</a></p>
-                </div>
-
-                <div class="veille-section">
-                    <h4>2. Le Cloud Distribué : Une Infrastructure Plus Agile et Performante</h4>
-                    <img src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&w=1200&q=80" alt="Distributed Cloud Infrastructure" class="veille-image">
-                    <p>Le cloud distribué permet d'exécuter des traitements de données plus proches des utilisateurs finaux, réduisant ainsi la latence et améliorant la sécurité des applications. Ce modèle est particulièrement adapté aux industries nécessitant une réactivité immédiate, comme la finance et la santé. En intégrant l'IA au cloud distribué, les entreprises peuvent analyser les données en temps réel et prendre des décisions plus rapides et précises.</p>
-                    <p class="source"><a href="https://www.zdnet.fr/actualites/le-cloud-distribue-va-t-il-revolutionner-l-informatique-en-entreprise-39917089.htm" target="_blank">🔗 Source</a></p>
-                </div>
-
-                <div class="veille-section">
-                    <h4>3. L'Ascension du Cloud Souverain et Privé</h4>
-                    <img src="https://images.unsplash.com/photo-1633265486064-086b219458ec?auto=format&fit=crop&w=1200&q=80" alt="Sovereign Cloud Security" class="veille-image">
-                    <p>Face aux préoccupations qui augmentent en matière de souveraineté des données et de conformité aux réglementations, les entreprises se tournent vers des solutions de cloud souverain et privé. Les gouvernements et les institutions européennes renforcent les exigences en matière de localisation des données, poussant les fournisseurs à développer des infrastructures locales. Cette évolution garantit un meilleur contrôle des données sensibles tout en maintenant la flexibilité du cloud.</p>
-                    <p class="source"><a href="https://www.journaldunet.com/solutions/cloud-computing/1514755-cloud-souverain-definition-enjeux-et-acteurs/" target="_blank">🔗 Source</a></p>
-                </div>
-
-                <div class="veille-section">
-                    <h4>4. La Montée en Puissance du Cloud Public</h4>
-                    <img src="https://images.unsplash.com/photo-1560732488-6b0df240254a?auto=format&fit=crop&w=1200&q=80" alt="Public Cloud Growth" class="veille-image">
-                    <p>Les investissements dans le cloud public atteindront 723 milliards de dollars en 2025, soulignant son adoption massive par les entreprises de toutes tailles. Cette croissance est principalement due aux besoins en transformation numérique, à la montée en puissance des services SaaS et à la migration progressive des infrastructures vers des solutions cloud évolutives et sécurisées. Cependant, la concentration du marché entre quelques géants technologiques soulève des questions sur l'accessibilité et l'équité dans l'innovation.</p>
-                    <p class="source"><a href="https://www.lemondeinformatique.fr/actualites/lire-le-marche-du-cloud-public-en-croissance-de-23-en-2023-selon-gartner-89847.html" target="_blank">🔗 Source</a></p>
-                </div>
-
-                <div class="veille-section">
-                    <h4>5. La Diversification des Infrastructures Cloud</h4>
-                    <img src="https://images.unsplash.com/photo-1597733336794-12d05021d510?auto=format&fit=crop&w=1200&q=80" alt="Cloud Infrastructure Diversity" class="veille-image">
-                    <p>L'optimisation des ressources cloud devient un enjeu majeur. Les entreprises adoptent des architectures plus diversifiées et des composants matériels spécialisés, comme des GPU optimisés pour l'IA. Cette évolution permet d'améliorer la performance des applications tout en réduisant les coûts énergétiques et opérationnels. La montée des modèles open-source renforce cette flexibilité, offrant des solutions sur mesure adaptées aux besoins spécifiques des entreprises.</p>
-                    <p class="source"><a href="https://www.itpro.fr/actualites/infrastructure-cloud-les-tendances-2024/" target="_blank">🔗 Source</a></p>
-                </div>
-
-                <div class="veille-section">
-                    <h4>6. La Sécurité et la Cryptographie Quantique</h4>
-                    <img src="https://images.unsplash.com/photo-1562813733-b31f71025d54?auto=format&fit=crop&w=1200&q=80" alt="Quantum Cryptography" class="veille-image">
-                    <p>Avec l'émergence de l'informatique quantique, la cybersécurité devient un défi crucial. Les algorithmes cryptographiques traditionnels risquent d'être obsolètes face à la puissance des futurs ordinateurs quantiques. Les entreprises doivent dès maintenant anticiper cette transition en adoptant des protocoles de cryptographie quantique résistants aux nouvelles menaces. La protection des infrastructures cloud critiques est au cœur des préoccupations, notamment dans les secteurs de la finance et des télécommunications.</p>
-                    <p class="source"><a href="https://www.silicon.fr/cryptographie-quantique-cloud-computing-459912.html" target="_blank">🔗 Source</a></p>
-                </div>
-
-                <div class="veille-section">
-                    <h4>7. L'Émergence d'un Cloud Plus Ouvert et Modulaire</h4>
-                    <img src="https://images.unsplash.com/photo-1551434678-e076c223a692?auto=format&fit=crop&w=1200&q=80" alt="Open Cloud Solutions" class="veille-image">
-                    <p>Les modèles cloud fermés des grands fournisseurs laissent place à des infrastructures plus ouvertes et flexibles. L'essor des solutions open-source permet aux entreprises d'adapter rapidement leurs outils et d'intégrer de nouvelles innovations sans dépendre d'un unique acteur. Cette tendance favorise également une meilleure accessibilité au cloud, notamment pour les startups et les entreprises situées dans des régions moins desservies par les datacenters à grande échelle spécialisés dans la fourniture de grandes quantités de puissance de calcul et de capacité de stockage.</p>
-                    <p class="source"><a href="https://www.lemagit.fr/actualites/365535799/Cloud-open-source-les-tendances-a-suivre-en-2024" target="_blank">🔗 Source</a></p>
-                </div>
-
-                <div class="veille-section conclusion">
-                    <h4>Conclusion : Un Cloud Plus Intelligent, Sécurisé et Stratégique</h4>
-                    <img src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&w=1200&q=80" alt="Future of Cloud Computing" class="veille-image">
-                    <p>Le cloud de 2025 n'est plus seulement une infrastructure informatique, mais un véritable point d'intérêt stratégique pour les entreprises. Son avenir repose sur une synergie entre intelligence artificielle, flexibilité des infrastructures, souveraineté des données et renforcement de la cybersécurité.</p>
-                </div>
-
-                <div class="sources">
-                    <h4>Sources principales :</h4>
-                    <ul>
-                        <li><a href="https://www.gartner.com/en/articles/gartner-top-10-strategic-technology-trends-for-2024" target="_blank">Gartner – Prévisions sur le cloud 2025</a></li>
-                        <li><a href="https://www.itpro.fr/actualites/predictions-technologiques-2024/" target="_blank">ITPro – Tendances cloud et IA</a></li>
-                        <li><a href="https://www.cio-online.com/actualites/lire-investissements-it-2024-les-predictions-de-gartner-14766.html" target="_blank">CIO – Augmentation des investissements IT en 2025</a></li>
-                    </ul>
-                </div>
+                <p>Suivi des tendances sur l'IA, la cybersécurité et le cloud souverain.</p>
+                <a href="https://www.gartner.com" target="_blank">Source : Gartner 2026</a>
             </div>
         </div>
     </section>
@@ -229,36 +137,45 @@
             <h2>Contact</h2>
             <form action="mailto:alexisbourdeau77@gmail.com" method="post" enctype="text/plain">
                 <div class="form-group">
-                    <label for="nom">Nom :</label>
-                    <input type="text" id="nom" name="nom" required>
+                    <label>Nom :</label>
+                    <input type="text" name="nom" required>
                 </div>
                 <div class="form-group">
-                    <label for="email">Email :</label>
-                    <input type="email" id="email" name="email" required>
+                    <label>Email :</label>
+                    <input type="email" name="email" required>
                 </div>
                 <div class="form-group">
-                    <label for="message">Message :</label>
-                    <textarea id="message" name="message" required></textarea>
+                    <label>Message :</label>
+                    <textarea name="message" required></textarea>
                 </div>
-                <button type="submit" class="btn">
-                    <i class="fas fa-paper-plane"></i> Envoyer
-                </button>
+                <button type="submit" class="btn">Envoyer</button>
             </form>
         </div>
     </section>
 
     <footer>
         <div class="container">
-            <p>Portfolio Alexis BOURDEAU - BTS SIO 2026</p>
-            <div class="footer-links">
-                <a href="https://www.institutionsaintaspais.fr/" target="_blank">
-                    <i class="fas fa-school"></i> Institution Saint-Aspais
-                </a>
-            </div>
+            <p>Portfolio Alexis BOURDEAU - BTS SIO SLAM 2026</p>
         </div>
     </footer>
+
+    <script>
+        // Script pour le mode sombre/clair
+        const themeToggle = document.getElementById('theme-toggle');
+        const body = document.body;
+
+        themeToggle.addEventListener('click', () => {
+            body.classList.toggle('light-theme');
+            const isLight = body.classList.contains('light-theme');
+            themeToggle.innerText = isLight ? "🌙 Sombre" : "☀️ Clair";
+            localStorage.setItem('theme', isLight ? 'light' : 'dark');
+        });
+
+        // Charger la préférence de l'utilisateur
+        if (localStorage.getItem('theme') === 'light') {
+            body.classList.add('light-theme');
+            themeToggle.innerText = "🌙 Sombre";
+        }
+    </script>
 </body>
 </html>
-
-
-
