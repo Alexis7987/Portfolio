@@ -16,52 +16,56 @@ body.light-mode {
 * { margin: 0; padding: 0; box-sizing: border-box; transition: 0.3s; }
 
 body {
-    font-family: sans-serif;
+    font-family: Arial, sans-serif;
     background-color: var(--bg-p);
     color: var(--txt-p);
     line-height: 1.6;
 }
 
-.container { max-width: 1100px; margin: 0 auto; padding: 5rem 2rem; }
+.container { max-width: 1100px; margin: 0 auto; padding: 4rem 2rem; }
 
 nav {
     background: var(--bg-s);
     padding: 1rem;
     position: fixed; width: 100%; top: 0;
     border-bottom: 1px solid var(--border);
-    display: flex; justify-content: center; align-items: center;
     z-index: 1000;
 }
 
-nav ul { list-style: none; display: flex; gap: 20px; align-items: center; }
-nav a { color: var(--txt-p); text-decoration: none; font-weight: bold; }
+nav ul { list-style: none; display: flex; justify-content: center; gap: 15px; align-items: center; flex-wrap: wrap; }
+nav a { color: var(--txt-p); text-decoration: none; font-weight: bold; font-size: 0.9rem; }
 
 .theme-btn {
     background: var(--accent);
-    color: white; border: none; padding: 8px 15px;
+    color: white; border: none; padding: 5px 12px;
     border-radius: 20px; cursor: pointer;
 }
 
 .card { 
     background: var(--bg-s); 
-    padding: 2rem; border-radius: 10px; 
-    margin: 1.5rem 0; border: 1px solid var(--border);
+    padding: 2rem; border-radius: 8px; 
+    margin: 1rem 0; border: 1px solid var(--border);
 }
 
-.veille-image {
-    width: 100%;
-    max-height: 400px;
-    object-fit: cover;
-    border-radius: 8px;
-    margin: 1rem 0;
-}
+.grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px; }
+
+.veille-image { width: 100%; border-radius: 8px; margin: 10px 0; }
 
 .btn {
-    display: inline-block; background: var(--accent);
-    color: white; padding: 10px 20px;
-    text-decoration: none; border-radius: 5px;
+    background: var(--accent); color: white;
+    padding: 10px 20px; text-decoration: none; border-radius: 5px;
+    display: inline-block; border: none; cursor: pointer;
 }
 
 .btn-alt { background: #27ae60; margin-left: 10px; }
 
-footer { background: var(--bg-s); padding: 2rem; text-align: center; border-top: 1px solid var(--border); }
+.form-group { margin-bottom: 15px; }
+input, textarea {
+    width: 100%; padding: 10px; margin-top: 5px;
+    background: var(--bg-p); border: 1px solid var(--border);
+    color: var(--txt-p);
+}
+
+footer { text-align: center; padding: 2rem; background: var(--bg-s); border-top: 1px solid var(--border); }
+
+@media (max-width: 768px) { nav ul { gap: 10px; } }
